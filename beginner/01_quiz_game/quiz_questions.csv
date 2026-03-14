@@ -1,0 +1,31 @@
+category,question,option_a,option_b,option_c,option_d,answer
+General,What is the capital of France?,Berlin,Madrid,Paris,Rome,C
+General,How many days are in a leap year?,364,365,366,367,C
+General,What is the largest ocean on Earth?,Atlantic,Indian,Arctic,Pacific,D
+General,How many continents are there on Earth?,5,6,7,8,C
+General,What color is the sun?,White,Yellow,Orange,Red,A
+General,Which planet is known as the Red Planet?,Venus,Mars,Jupiter,Saturn,B
+General,How many sides does a hexagon have?,5,6,7,8,B
+General,What is the fastest land animal?,Lion,Leopard,Cheetah,Horse,C
+General,How many hours are in a day?,12,24,36,48,B
+General,What is the largest continent?,Africa,Asia,Europe,North America,B
+Science,What is the chemical symbol for water?,WA,H2O,HO,W2O,B
+Science,What planet is closest to the Sun?,Venus,Earth,Mercury,Mars,C
+Science,What gas do plants absorb from the atmosphere?,Oxygen,Nitrogen,Carbon Dioxide,Hydrogen,C
+Science,What is the powerhouse of the cell?,Nucleus,Mitochondria,Ribosome,Golgi body,B
+Science,How many bones are in the adult human body?,196,206,216,226,B
+Science,What is the speed of light (approx) in km/s?,100000,200000,300000,400000,C
+Science,What force keeps us on the ground?,Magnetism,Gravity,Friction,Tension,B
+Science,What is the most abundant gas in Earth's atmosphere?,Oxygen,Carbon Dioxide,Hydrogen,Nitrogen,D
+Science,What organ pumps blood through the body?,Liver,Lungs,Heart,Kidney,C
+Science,What is the atomic number of Hydrogen?,1,2,3,4,A
+History,Who was the first President of the United States?,Abraham Lincoln,Thomas Jefferson,George Washington,John Adams,C
+History,In what year did World War II end?,1943,1944,1945,1946,C
+History,Which ancient wonder was located in Egypt?,Colossus of Rhodes,Hanging Gardens,Great Pyramid of Giza,Lighthouse of Alexandria,C
+History,Who wrote the Declaration of Independence?,George Washington,Benjamin Franklin,Thomas Jefferson,John Adams,C
+History,In what year did the Titanic sink?,1910,1912,1914,1916,B
+History,Which empire was Julius Caesar a part of?,Greek,Ottoman,Roman,Byzantine,C
+History,Who was the first human to walk on the Moon?,Buzz Aldrin,Yuri Gagarin,Neil Armstrong,John Glenn,C
+History,The Berlin Wall fell in which year?,1987,1988,1989,1990,C
+History,Which country was Nelson Mandela president of?,Zimbabwe,Nigeria,Kenya,South Africa,D
+History,Who painted the Mona Lisa?,Michelangelo,Raphael,Leonardo da Vinci,Donatello,C
