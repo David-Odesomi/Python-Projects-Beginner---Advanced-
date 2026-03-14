@@ -1,12 +1,6 @@
 # 04 Choose Your Own Adventure
-import sys
-import time
-
-def slowprint(s):
-    for c in s + '\n':
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(0.05)
+from outcomes import side_story1, side_story2
+from utils import slowprint
 slowprint("Welcome to choose your adventure.")
 def name():
     user_name = input("what is your name? enter: ")
@@ -50,10 +44,14 @@ def main_story():
     slowprint("  B) Trust Raven")
     print("-" * 50)
 
-    response_input = input("A or B?: ")
+    response_input = input("A or B?: ").upper()
+    response_input = input("A or B?: ").upper()
     if response_input == "A":
-        side_story1()
-
+        side_story1(user_name)
+    elif response_input == "B":
+        side_story2(user_name)
+    else:
+        slowprint("Invalid choice. Please enter A or B.")
 
 
 main_story()
