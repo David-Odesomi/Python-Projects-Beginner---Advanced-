@@ -10,7 +10,6 @@ def name():
 user_name = name()
 slowprint(f"Meet the characters: \n{user_name.title()} -> you, \nMira -> Your brave friend, \n"
       f"Old Eli -> A mysterious groundskeeper, \nRaven -> A shady stranger. ")
-
 def main_story():
     print("=" * 50)
     slowprint("        🏚️  THE ABANDONED MANOR")
@@ -44,7 +43,6 @@ def main_story():
     slowprint("  B) Trust Raven")
     print("-" * 50)
 
-    response_input = input("A or B?: ").upper()
     response_input = input("A or B?: ").upper()
     if response_input == "A":
         side_story1(user_name)

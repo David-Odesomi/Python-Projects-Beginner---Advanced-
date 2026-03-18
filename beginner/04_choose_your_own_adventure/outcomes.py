@@ -1,8 +1,5 @@
 from utils import slowprint
 def side_story1(user_name):
-    print("\n" + "=" * 50)
-    slowprint("        ✅  OUTCOME A: THE TRUTH UNCOVERED")
-    print("=" * 50)
 
     slowprint(f"\n{user_name}: 'We're going with Eli.'")
     slowprint(f"\nRaven: *coldly* 'Your loss.'")
@@ -35,10 +32,6 @@ def side_story1(user_name):
 
 
 def side_story2(user_name):
-    print("\n" + "=" * 50)
-    slowprint("        ❌  OUTCOME B: PLAYED FOR FOOLS")
-    print("=" * 50)
-
     slowprint(f"\n{user_name}: 'We're going with Raven.'")
     slowprint("\nOld Eli: *sighing* 'I tried to warn you.'")
     slowprint("\nRaven: 'Smart. Follow me — quickly.'")
@@ -67,7 +60,6 @@ def side_story2(user_name):
     slowprint("\nOld Eli: 'An old compass. Worthless to anyone but her, I suppose. Sentimental value.'")
     slowprint(f"\n{user_name}: 'We should have listened to you.'")
     slowprint("\nOld Eli: 'Yes… you should have.'")
-
     print("\n" + "-" * 50)
     slowprint("💀  Ending B: PLAYED FOR FOOLS")
     print("-" * 50)
