@@ -7,4 +7,4 @@ computer_selection = math.
 
 def play ():
     if player_selection == 'rock' and computer_selection == 1:
-        print  
+        print
