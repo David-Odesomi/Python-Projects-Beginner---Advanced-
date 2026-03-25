@@ -17,13 +17,16 @@ else:
         print(f"  B) {row['option_b']}")
         print(f"  C) {row['option_c']}")
         print(f"  D) {row['option_d']}")
-
         answer = input("Your answer (A/B/C/D): ").strip().upper()
+        
+        while answer not in ("A", "B", "C", "D"):
+            answer = input("Your answer (A/B/C/D): ").strip().upper()
 
         if answer == row['answer']:
             print("Correct!")
             score += 1
         else:
             print(f"Wrong. Answer was {row['answer']}")
+                
 
     print(f"\nQuiz done! You scored {score}/5")
