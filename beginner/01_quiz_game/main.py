@@ -18,7 +18,7 @@ else:
         print(f"  C) {row['option_c']}")
         print(f"  D) {row['option_d']}")
         answer = input("Your answer (A/B/C/D): ").strip().upper()
-        
+
         while answer not in ("A", "B", "C", "D"):
             answer = input("Your answer (A/B/C/D): ").strip().upper()
 
