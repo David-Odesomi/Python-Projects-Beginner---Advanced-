@@ -4,7 +4,8 @@ import random
 
 
 def guessing_game():
-    random_number = random.randint(1, 10)
+    number1 = int(input("Enter first number: "))
+    number2 = int(input("Enter second number: "))
     player_number = None
 
     while player_number != random_number:
