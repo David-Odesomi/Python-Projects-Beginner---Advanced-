@@ -5,6 +5,18 @@ import pandas as pd
 from bs4 import BeautifulSoup
 
 URL = "https://realpython.github.io/fake-jobs/"
+try:
+    response = requests.get(URL, timeout=10)
+    response.raise_for_status()
+except requests.exceptions.ConnectionError:
+    print("❌ No internet connection.")
+    exit()
+except requests.exceptions.Timeout:
+    print("❌ Request timed out.")
+    exit()
+except requests.exceptions.HTTPError as e:
+    print(f"❌ HTTP error: {e}")
+    exit()
 response = requests.get(URL)
 soup = BeautifulSoup(response.text, "html.parser")
 
