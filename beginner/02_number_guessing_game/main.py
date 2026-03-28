@@ -1,6 +1,7 @@
 # 02 Number Guessing Game
 import random
 
+print("WELCOME TO THE NUMBER GUESSING GAME!")
 def guessing_game():
     tries = 0
     while True:
@@ -22,20 +23,24 @@ def guessing_game():
     while player_number != random_number:
         try:
             player_number = int(input("Enter your guess: "))
-            if player_number + 1 == random_number or player_number - 1 == random_number:
-                print("So close!")
-            else:
+            if player_number > random_number:
+                print("Too high.")
                 print("Try again!")
                 tries += 1
-            if player_number > random_number:
-                print("Too high. Try lower.")
             else:
-                print("Too low. Try higher.")
+                print("Too low.")
+                print("Try again!")
+                tries += 1
         except ValueError:
             print("⚠️ Please enter a valid number.")
 
     print('You got it!')
     print(f"The number was {random_number}!")
     print(f"You got it in {tries} tries.")
-
 guessing_game()
+print(f"Do you want to play again?")
+yes_or_no = input("Y/N?: ")
+if yes_or_no == "Y":
+    guessing_game()
+else:
+    print("Have a nice day.")
