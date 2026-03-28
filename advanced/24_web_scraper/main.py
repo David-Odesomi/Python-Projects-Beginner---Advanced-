@@ -1,5 +1,4 @@
 # 24 Web Scraper
-# 24 Web Scraper
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
