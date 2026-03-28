@@ -27,6 +27,10 @@ def guessing_game():
             else:
                 print("Try again!")
                 tries += 1
+            if player_number > random_number:
+                print("Too high. Try lower.")
+            else:
+                print("Too low. Try higher.")
         except ValueError:
             print("⚠️ Please enter a valid number.")
 
