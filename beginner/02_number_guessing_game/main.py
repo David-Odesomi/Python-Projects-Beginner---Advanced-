@@ -6,6 +6,7 @@ import random
 def guessing_game():
     number1 = int(input("Enter first number: "))
     number2 = int(input("Enter second number: "))
+    random_number = random.randint(number1, number2)
     player_number = None
 
     while player_number != random_number:
