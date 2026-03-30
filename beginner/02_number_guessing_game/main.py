@@ -7,18 +7,22 @@ def guessing_game():
     tries = 0
     print("Select difficulty.")
     print("EASY/MEDIUM/HARD or SELF-SET")
-    difficulty_choose = input("Enter your difficulty: ")
+    difficulty_choose = input("Enter your difficulty: ").upper()
 
     if difficulty_choose == "EASY":
         number1 = 1
         number2 = 10
+        print(f"{difficulty_choose} selected.")
     elif difficulty_choose == "MEDIUM":
         number1 = 1
         number2 = 20
+        print(f"{difficulty_choose} selected.")
     elif difficulty_choose == "HARD":
         number1 = 1
         number2 = 40
+        print(f"{difficulty_choose} selected.")
     elif difficulty_choose == "SELF-SET":
+        print(f"{difficulty_choose} selected.")
         while True:
             try:
                 number1 = int(input("Enter first number: "))
