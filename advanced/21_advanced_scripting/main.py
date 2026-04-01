@@ -5,7 +5,9 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 import csv
+import boto3
 
+s3 = boto3.client("s3")
 today = datetime.today().strftime("%Y-%m-%d")
 
 load_dotenv()
@@ -63,5 +65,12 @@ with open(filepath , "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["date", "open", "high", "low", "close", "volume"])
     writer.writerow([today, open_price, high, low, close, volume])
+
+
+bucket_name = "stock-reports-david"
+
+s3_key = f"{ticker}/{latest_date}.csv"
+s3.upload_file(filepath, bucket_name, s3_key)
+print(f"uplaoded to s3: {bucket_name}/{s3_key}")
 
 print(f"✅ Report saved to {filepath}")
